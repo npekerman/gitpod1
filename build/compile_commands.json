@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/workspaces/gitpod1/build",
-  "command": "/usr/bin/g++  -I/workspaces/gitpod1/include -g -Wall -Wextra -pedantic -Werror -std=c++23 -o CMakeFiles/runner.dir/src/main.cpp.o -c /workspaces/gitpod1/src/main.cpp",
-  "file": "/workspaces/gitpod1/src/main.cpp"
-}
-]
