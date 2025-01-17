@@ -4,12 +4,17 @@
 
 namespace rcv
 {
+    // c++ concept for numeric numbers
     template <typename T>
-    struct MetaData
+    concept Numeric = std::integral<T> || std::floating_point<T>;
+
+
+    template <Numeric T>
+    struct Data
     {
         const T data;
-        const std::string name;
-        const std::string type;
-        const std::string description;
+        std::string print() {
+            return std::to_string(data);
+        }
     };
 }
