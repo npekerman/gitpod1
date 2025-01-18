@@ -8,12 +8,14 @@ namespace rcv
     template <typename T>
     concept Numeric = std::integral<T> || std::floating_point<T>;
 
-
     template <Numeric T>
-    struct Data
+    struct Node
     {
+        // data member
         const T data;
-        std::string print() {
+
+        std::string print() const
+        {
             return std::to_string(data);
         }
     };
